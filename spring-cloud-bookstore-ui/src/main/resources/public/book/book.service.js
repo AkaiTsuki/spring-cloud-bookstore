@@ -12,7 +12,7 @@
 
             $http.get("token").success(function(token){
                 $http({
-                    url: 'http://localhost:8090/services/books',
+                    url: '/services/books',
                     method: 'GET',
                     headers: {
                         'X-Auth-Token' : token.token

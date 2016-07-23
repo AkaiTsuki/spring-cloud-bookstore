@@ -2,6 +2,7 @@ package io.github.akaitsuki.bookstore.ui;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -15,6 +16,7 @@ import java.util.Map;
  */
 @SpringBootApplication
 @RestController
+@EnableZuulProxy
 public class Application {
 
     @RequestMapping("/token")

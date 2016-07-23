@@ -1,3 +1,4 @@
 rootProject.name = 'spring-cloud-bookstore'
-rootProject.name = 'spring-cloud-bookstore'
+include 'spring-cloud-bookstore-ui'
+include 'spring-cloud-bookstore-service'
 

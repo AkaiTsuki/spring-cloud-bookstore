@@ -1,4 +1,5 @@
 rootProject.name = 'spring-cloud-bookstore'
 include 'spring-cloud-bookstore-ui'
 include 'spring-cloud-bookstore-service'
+include 'spring-cloud-bookstore-gateway'
 

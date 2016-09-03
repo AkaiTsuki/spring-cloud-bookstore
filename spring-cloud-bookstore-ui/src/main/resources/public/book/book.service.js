@@ -10,7 +10,7 @@
         me.loadAllBooks = function () {
             var deferred = $q.defer();
 
-            $http.get("token").success(function(token){
+            $http.get("/token").success(function(token){
                 $http({
                     url: '/services/books',
                     method: 'GET',

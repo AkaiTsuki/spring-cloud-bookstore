@@ -11,11 +11,11 @@
                 url: '/home',
                 views: {
                     'main@': {
-                        templateUrl: '/book/book.list.html',
+                        templateUrl: 'ui/book/book.list.html',
                         controller: 'BookController'
                     },
                     'header@': {
-                        templateUrl: 'header/header.html',
+                        templateUrl: 'ui/header/header.html',
                         controller: 'HeaderController'
                     }
                 },

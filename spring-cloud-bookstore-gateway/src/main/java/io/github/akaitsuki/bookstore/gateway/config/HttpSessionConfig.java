@@ -1,9 +1,8 @@
-package io.github.akaitsuki.bookstore.ui.config;
+package io.github.akaitsuki.bookstore.gateway.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.session.data.mongo.JdkMongoSessionConverter;
 import org.springframework.session.data.mongo.config.annotation.web.http.EnableMongoHttpSession;
-import org.springframework.session.web.http.HeaderHttpSessionStrategy;
 
 /**
  * Created by Jiachi on 7/23/2016.
@@ -14,10 +13,5 @@ public class HttpSessionConfig {
     @Bean
     public JdkMongoSessionConverter jdkMongoSessionConverter() {
         return new JdkMongoSessionConverter();
-    }
-
-    @Bean
-    public HeaderHttpSessionStrategy sessionStrategy() {
-        return new HeaderHttpSessionStrategy();
     }
 }

@@ -1,4 +1,4 @@
-package io.github.akaitsuki.bookstore.ui.config;
+package io.github.akaitsuki.bookstore.gateway.config;
 
 import org.springframework.security.web.csrf.CsrfToken;
 import org.springframework.web.filter.OncePerRequestFilter;

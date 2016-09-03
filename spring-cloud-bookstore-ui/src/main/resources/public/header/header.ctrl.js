@@ -7,7 +7,7 @@
     var headerController = ['$scope', '$http', function ($scope, $http) {
         $scope.logout = function () {
             $http.post('logout', {}).finally(function () {
-                window.location.href = '/';
+                window.location.href = '/ui';
             });
         };
     }];

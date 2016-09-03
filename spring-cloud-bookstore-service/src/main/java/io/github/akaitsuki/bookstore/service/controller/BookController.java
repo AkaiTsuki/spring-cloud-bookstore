@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 /**
@@ -22,7 +23,8 @@ public class BookController {
 
     @RequestMapping("services/books")
     @ResponseBody
-    List<Book> loadBooks() {
+    List<Book> loadBooks(HttpServletRequest req) {
+        System.out.println("X-AUTH-TEST HEADER: "+req.getHeader("x-auth-test"));
         return bookService.findBooks();
     }
 }

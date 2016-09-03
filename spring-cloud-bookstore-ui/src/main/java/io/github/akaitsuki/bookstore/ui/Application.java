@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.util.Collections;
 import java.util.Map;
@@ -22,6 +23,7 @@ public class Application {
     @RequestMapping("/token")
     @ResponseBody
     public Map<String,String> token(HttpSession session) {
+
         return Collections.singletonMap("token", session.getId());
     }
 
